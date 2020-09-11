@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/",
+    "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/layout",
+    "children": [
+      {
+        "path": "/",
+        "name": "home",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/home",
+        "_name": "_0c08da59"
+      },
+      {
+        "path": "/login",
+        "name": "login",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/login",
+        "_name": "_754ab92f"
+      },
+      {
+        "path": "/regeister",
+        "name": "regeister",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/login",
+        "_name": "_754ab92f"
+      },
+      {
+        "path": "/articel",
+        "name": "articel",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/articel",
+        "_name": "_0d723c6a"
+      },
+      {
+        "path": "/create",
+        "name": "create",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/create",
+        "_name": "_24da0ff6"
+      },
+      {
+        "path": "/profile",
+        "name": "profile",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/profile",
+        "_name": "_26a7f9ef"
+      },
+      {
+        "path": "/settings",
+        "name": "settings",
+        "component": "/Users/halo/Desktop/dev/realWorld/realWorld-nuxtjs/pages/settings",
+        "_name": "_3f97549d"
+      }
+    ],
+    "_name": "_334f6a24"
+  }
+]
