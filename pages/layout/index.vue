@@ -3,24 +3,27 @@
     <!-- 顶部导航 -->
     <nav class="navbar navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">conduit</a>
+        <nuxt-link class="navbar-brand" exact to="/">conduit</nuxt-link>
         <ul class="nav navbar-nav pull-xs-right">
           <li class="nav-item">
             <!-- Add "active" class when you're on that page" -->
-            <a class="nav-link active" href>Home</a>
+            <nuxt-link class="nav-link" exact to="/">Home</nuxt-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href>
+            <nuxt-link class="nav-link" to="/create">
               <i class="ion-compose"></i>&nbsp;New Post
-            </a>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href>
+            <nuxt-link class="nav-link" to="/settings">
               <i class="ion-gear-a"></i>&nbsp;Settings
-            </a>
+            </nuxt-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href>Sign up</a>
+          <li class="nav-item" v-if="!user">
+            <nuxt-link to="/login" class="nav-link">Sign up</nuxt-link>
+          </li>
+          <li class="nav-item" v-else>
+            <span class="nav-link">user: {{user.username}}</span>
           </li>
         </ul>
       </div>
@@ -41,11 +44,11 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapState } from "vuex";
 export default {
-  // name: "RwvHeader",
-  // computed: {
-  //   ...mapGetters(["currentUser", "isAuthenticated"])
-  // }
+  name: "Layout",
+  computed: {
+    ...mapState(["user"]),
+  },
 };
 </script>

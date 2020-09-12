@@ -1,5 +1,6 @@
 export default {
   router: {
+    linkActiveClass: 'active',
     extendRoutes(routes, resolve) {
       //清楚默认的生产的路由数组
       routes.splice(0)

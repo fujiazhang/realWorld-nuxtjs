@@ -72,5 +72,9 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  //在路由匹配组件渲染前会先执行中间件处理
+  name: "create",
+  middleware: "authenticated",
+};
 </script>
